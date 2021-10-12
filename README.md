@@ -1,6 +1,6 @@
-| [master](https://github.com/KenticoDocs/kontent-docs-index-sync/tree/master) | [develop](https://github.com/KenticoDocs/kontent-docs-index-sync/tree/develop) |
-|:---:|:---:|
-| [![Build Status](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync.svg?branch=master)](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync/branches) [![codebeat badge](https://codebeat.co/badges/22a5efee-1d1a-494f-a485-986a5d92fe94)](https://codebeat.co/projects/github-com-kenticodocs-kontent-docs-index-sync-master) | [![Build Status](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync.svg?branch=develop)](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync/branches) [![codebeat badge](https://codebeat.co/badges/279abd8a-2d9c-4f4e-b939-1a8a129dab15)](https://codebeat.co/projects/github-com-kenticodocs-kontent-docs-index-sync-develop) |
+![master](https://github.com/KenticoDocs/kontent-docs-index-sync/actions/workflows/master_kcd-index-sync-live-master.yml/badge.svg)
+![develop](https://github.com/KenticoDocs/kontent-docs-index-sync/actions/workflows/develop_kcd-index-sync-live-dev.yml/badge.svg)
+
 
 # Kentico Kontent Documentation - Index sync
 
