@@ -1,19 +1,16 @@
-| [master](https://github.com/KenticoDocs/kontent-docs-index-sync/tree/master) | [develop](https://github.com/KenticoDocs/kontent-docs-index-sync/tree/develop) |
-|:---:|:---:|
-| [![Build Status](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync.svg?branch=master)](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync/branches) [![codebeat badge](https://codebeat.co/badges/22a5efee-1d1a-494f-a485-986a5d92fe94)](https://codebeat.co/projects/github-com-kenticodocs-kontent-docs-index-sync-master) | [![Build Status](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync.svg?branch=develop)](https://travis-ci.com/KenticoDocs/kontent-docs-index-sync/branches) [![codebeat badge](https://codebeat.co/badges/279abd8a-2d9c-4f4e-b939-1a8a129dab15)](https://codebeat.co/projects/github-com-kenticodocs-kontent-docs-index-sync-develop) |
+![master](https://github.com/Kontent-ai-Learn/kontent-ai-learn-index-sync/actions/workflows/master_kcd-index-sync-live-master.yml/badge.svg)
+![develop](https://github.com/Kontent-ai-Learn/kontent-ai-learn-index-sync/actions/workflows/develop_kcd-index-sync-live-dev.yml/badge.svg)
 
-# Kentico Kontent Documentation - Index sync
+# Kontent.ai Learn - Index sync
 
-Backend service for [Kentico Kontent](https://docs.kontent.ai/) documentation portal, which utilizes Kentico Kontent as a source of its data.
+Backend service for [Kontent.ai Learn](https://kontent.ai/learn/) that uses Kontent.ai as a source of its data.
 
-The service is responsible for receiving split items from Kentico Kontent to records and storing them in the [Algolia](https://www.algolia.com/) index. The service is triggered when a blob is stored in the blob storage by the [Tutorials Search](https://github.com/KenticoDocs/kontent-docs-tutorial-search) service.
+The service is responsible for receiving split items from Kontent.ai to records and storing them in the [Algolia](https://www.algolia.com/) index. The service is triggered when a blob is stored in the blob storage by the [Tutorials Search](https://github.com/Kontent-ai-Learn/kontent-ai-learn-tutorial-search) service.
 
 ## Overview
 
 1. This project is a TypeScript Azure Functions application.
-
 2. It is subscribed to an Azure Event Grid topic of the Blob storage, which creates an event when a blob is created. Each event contains the url of the blob that was created.
-
 3. The Index Sync service fetches the blob, sanitizes the content of the records and stores them in the Algolia index.
 
 ## Setup
@@ -34,6 +31,7 @@ The service is responsible for receiving split items from Kentico Kontent to rec
 6. Deploy to Azure using Azure Functions extension tab, or run locally by pressing Ctrl + F5 in Visual Studio Code.
 
 #### Required Keys
+
 * `Azure.StorageAccountName` - The name of the storage account in Azure
 * `Azure.StorageKey` - The storage key for the Azure storage account
 * `Search.ApiKey` - Algolia admin API key
@@ -41,10 +39,13 @@ The service is responsible for receiving split items from Kentico Kontent to rec
 * `Search.IndexName` - Index name in Algolia application
 
 ## Testing
+
 Run `yarn run test` in the terminal.
 
 ## How To Contribute
+
 Feel free to open a new issue where you describe your proposed changes, or even create a new pull request from your branch with proposed changes.
 
-## Licence
-All the source codes are published under MIT licence.
+## License
+
+All the source codes are published under MIT license.
